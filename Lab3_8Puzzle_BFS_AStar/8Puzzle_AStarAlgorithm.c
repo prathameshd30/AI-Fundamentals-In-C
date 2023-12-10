@@ -92,7 +92,6 @@ Node *createNode(int board[DIMENSION][DIMENSION], Node *parent, Node *child, Nod
     }
     newNode->child = child;
     newNode->next = next;
-    // printf("%p\n",newNode);
     return newNode;
 }
 
@@ -186,7 +185,6 @@ bool removeSpecific(Node **listHead, Node *node)
 {
     if (*listHead == NULL)
     {
-        // printf("Error, remove specific to nullptr\n");
         return false;
     }
     if (compareBoardPositions((*listHead)->boardPosition, node->boardPosition) && (*listHead)->gCurrent + (*listHead)->heuristic_value > node->gCurrent + node->heuristic_value)
@@ -245,7 +243,6 @@ int main(void)
     }
     printBoard(originalBoard);
     getBoardPosition(originalBoard);
-    // getBoardPosition(goalState);
     printf("This is the final board position - \n");
     printBoard(originalBoard);
     Node *OPENnode = NULL;
@@ -404,9 +401,6 @@ int main(void)
         printf("CLOSED LIST BEGIN\n");
         printList(CLOSEDnode);
         printf("CLOSED LIST END\n");
-        // getch();
         ++bruh;
     }
-    // removeSpecific(&CLOSEDnode, CLOSEDnode->boardPosition);
-    // printList(CLOSEDnode);
 }

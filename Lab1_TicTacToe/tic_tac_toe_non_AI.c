@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define DIMENSION 3
+#define DIMENSION 3 // To define side of tic-tac-toe board, prevent magic numbers
 unsigned short board[DIMENSION][DIMENSION];
 unsigned short vector[DIMENSION*DIMENSION];
 void initializeBoard(void)
