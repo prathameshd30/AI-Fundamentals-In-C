@@ -23,7 +23,7 @@ The AI approach
 
 Simple Hill Climbing Approach
 1. Takes the state of the board
-2. While Current Heuristic less than New Move Heuristic
+2. While Current Heuristic is less than New Move Heuristic
     - Generate new move
     - Calculate heuristic
 3. Execute new move
@@ -37,7 +37,7 @@ Steepest Hill Climbing Approach
 
 ## Lab 3 8 Puzzle Best First Search
 
-A* (A-star) Approach
+A* (A-star) Approach.
 1. Takes the state of the board
 2. Generate all possible moves and their heuristics and total cost to traverse till the state.
 3. If not in CLOSED, after exploring neighbours, place in CLOSED. if already in CLOSED, update cost if it is lesser than current.
@@ -49,8 +49,11 @@ An example of a system in Programmable Logic (SWI-Prolog).
 
 ## Lab 5 Single Perceptron
 
-Neuron Model
 
-Perceptron Learning Rule
+1. Take input vectors.
+2. Take desired outputs.
+3. Generate weight vector. (Taken as input in this problem).
+4. Adjust weights till all desired outputs are achieved. (Error is zero).
 
-Perceptron Convergence Theorem
+
+Perceptron Convergence Theorem - For a pairwise linearly separable dataset, the perceptron can classify the classes in a finite number of iterations.
